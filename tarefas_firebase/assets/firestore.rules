@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid}/tasks/{task_id} {
+      function userAllowed() {
+        return request.auth != null && uid == request.auth.uid;
+      }
+
+      function checkAllFields() {
+        return request.resource.data.keys() == ["desc", "done", "timestamp"];
+      }
+
+      function checkOnlyFields() {
+        return request.resource.data.keys().hasOnly(["desc", "done", "timestamp"]);
+      }
+
+      allow create: if userAllowed() && checkAllFields();
+      allow update: if userAllowed() && checkOnlyFields();
+      allow read, delete: if userAllowed();
+    }
+  }
+}

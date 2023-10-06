@@ -1,0 +1,10 @@
+clima/assets/* -> https://dribbble.com/shots/14328625-Weather-Forecast-App
+clima/design/* -> https://dribbble.com/shots/14328625-Weather-Forecast-App
+
+firebase/assets/default_photo.svg -> https://stock.adobe.com/images/avatar/353110097
+
+memoria/assets/logo_cpp.png -> https://commons.wikimedia.org/wiki/File:ISO_C%2B%2B_Logo.svg
+memoria/assets/logo_html5.png -> https://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.svg
+memoria/assets/logo_java.png -> https://en.wikipedia.org/wiki/File:Java_programming_language_logo.svg
+memoria/assets/logo_php.png -> https://commons.wikimedia.org/wiki/File:PHP-logo.svg
+memoria/assets/logo_python.png -> https://commons.wikimedia.org/wiki/File:Python-logo-notext.svg
